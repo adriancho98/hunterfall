@@ -241,7 +241,7 @@
             <div class="band-photo reveal"><img src="integrantes.jpg" alt="Hunterfall"></div>
             <div class="band-info reveal">
                 <div class="section-label">La Banda</div>
-                <p class="band-bio">Hunterfall nace en 2020 en Tehuacán, Puebla. Cinco voces, cinco temperamentos, un solo muro de ruido y emoción. Su sonido cruza las fronteras entre el shoegaze, el hardcore y el grunge — capas de distorsión que se abren para revelar melodías que se quedan contigo mucho después de que la última nota se apaga.</p>
+                <p class="band-bio">Hunterfall nace en 2020 en Tehuacán, Puebla. Cinco voces, cinco temperamentos, un solo muro de ruido y emoción. Su sonido cruza las fronteras entre el Post-grunge, el Emo Revival y el Rock Alternativo — capas de distorsión que se abren para revelar melodías que se quedan contigo mucho después de que la última nota se apaga.</p>
                 <div class="band-members">
                     <strong>Robert</strong> — Voz<br>
                     <strong>Vick</strong> — Lead Guitar<br>
@@ -282,5 +282,9 @@
         const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target);}});},{threshold:0.12});
         document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
     </script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "169fc4bbfe564dfa8e84f63baf64fc59"}'></script>
+    <!-- End Cloudflare Web Analytics -->
 </body>
 </html>
