@@ -26,7 +26,7 @@
         ::selection { background: var(--white); color: var(--black); }
         a { color: var(--white); text-decoration: none; transition: opacity 0.2s; }
         a:hover { opacity: 0.7; }
-        img { display: block; max-width: 100%; }
+        img { display: block; max-width: 100%; height: auto; }
 
         /* ========== SECTION 1: HEADER + HERO ========== */
         .header-bar {
@@ -199,8 +199,8 @@
 
     <!-- ===== SECTION 1: HEADER + HERO ===== -->
     <header class="header-bar">
-        <a href="#" class="nav-skull"><img src="craneo.png" alt="Hunterfall"></a>
-        <div class="nav-title"><img src="hunterfall-logo.png" alt="Hunterfall"></div>
+        <a href="#" class="nav-skull"><img src="craneo.png" alt="Hunterfall" width="200" height="191"></a>
+        <div class="nav-title"><img src="hunterfall-logo.png" alt="Hunterfall" width="800" height="293"></div>
         <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
             <span></span><span></span><span></span>
         </button>
@@ -212,25 +212,25 @@
     </header>
 
     <section class="hero">
-        <img class="hero-photo" src="retrato.jpg" alt="Hunterfall">
+        <img class="hero-photo" src="retrato.jpg" alt="Hunterfall" width="1600" height="766">
     </section>
 
     <!-- ===== SECTION 2: RELEASE ===== -->
     <section class="release" id="release">
         <div class="release-inner">
-            <div class="reveal"><img class="release-losing-img" src="losing-title.png" alt="Losing"></div>
+            <div class="reveal"><img class="release-losing-img" src="losing-title.png" alt="Losing" width="600" height="269"></div>
             <div class="release-top reveal">
-                <img class="release-cover" src="portada-losing.jpg" alt="Hunterfall — Losing">
+                <img class="release-cover" src="portada-losing.jpg" alt="Hunterfall — Losing" width="800" height="800">
                 <p class="release-description">El sentimiento de pérdida expresado a través de una tormenta en la cual la incertidumbre nunca termina. El escribir Losing fue una guía que trazó el camino a seguir la búsqueda del sonido para Hunterfall.</p>
             </div>
             <div class="release-bottom">
-            <div class="reveal"><img class="release-disponible" src="disponible-ahora.png" alt="Disponible ahora"></div>
+            <div class="reveal"><img class="release-disponible" src="disponible-ahora.png" alt="Disponible ahora" width="500" height="271"></div>
             <div class="stream-links reveal">
                 <a href="https://www.youtube.com/watch?v=SV9rstjBzN4" class="stream-icon" target="_blank" rel="noopener" title="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
                 <a href="https://open.spotify.com/track/5zZ9BaKlts6IukKj9oUpIy?si=abhlZAWbRdCLiR0IwH4UsQ" class="stream-icon" target="_blank" rel="noopener" title="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
                 <a href="https://music.apple.com/mx/album/losing-single/1896108773" class="stream-icon" target="_blank" rel="noopener" title="Apple Music"><svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg></a>
-                <a href="https://play.qobuz.com/album/xrxqmepfrst1u" class="stream-icon" target="_blank" rel="noopener" title="Qobuz"><img src="qobuz.svg" alt="Qobuz" class="stream-img"></a>
-                <a href="https://music.amazon.com.mx/albums/B0GZC6R541" class="stream-icon" target="_blank" rel="noopener" title="Amazon Music"><img src="amazon-music.svg" alt="Amazon Music" class="stream-img"></a>
+                <a href="https://play.qobuz.com/album/xrxqmepfrst1u" class="stream-icon" target="_blank" rel="noopener" title="Qobuz"><img src="qobuz.svg" alt="Qobuz" class="stream-img" width="779" height="332"></a>
+                <a href="https://music.amazon.com.mx/albums/B0GZC6R541" class="stream-icon" target="_blank" rel="noopener" title="Amazon Music"><img src="amazon-music.svg" alt="Amazon Music" class="stream-img" width="900" height="900"></a>
                 <a href="https://tidal.com/album/521030713/track/521030714" class="stream-icon" target="_blank" rel="noopener" title="Tidal"><svg viewBox="0 0 24 24"><path d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996 4.004 12l4.004-4.004L12.012 12l4.004-4.004L12.012 3.992zM12.012 12l-4.004 4.004L12.012 20.008l4.004-4.004L12.012 12zM20.02 3.992l-4.004 4.004L20.02 12l4.004-4.004-4.004-4.004z"/></svg></a>
             </div>
             </div>
@@ -238,7 +238,7 @@
     </section>
     <section class="band-section" id="band">
         <div class="band-inner">
-            <div class="band-photo reveal"><img src="integrantes.jpg" alt="Hunterfall"></div>
+            <div class="band-photo reveal"><img src="integrantes.jpg" alt="Hunterfall" width="800" height="1200"></div>
             <div class="band-info reveal">
                 <div class="section-label">La Banda</div>
                 <p class="band-bio">Hunterfall nace en 2020 en Tehuacán, Puebla. Cinco voces, cinco temperamentos, un solo muro de ruido y emoción. Su sonido cruza las fronteras entre el Post-grunge, el Emo Revival y el Rock Alternativo — capas de distorsión que se abren para revelar melodías que se quedan contigo mucho después de que la última nota se apaga.</p>
@@ -257,7 +257,7 @@
     <section class="contact-section" id="links">
         <div class="contact-inner">
             <div class="section-label reveal" style="margin-bottom: 2rem;">Síguenos</div>
-            <div class="reveal"><img class="contact-porton" src="porton.jpg" alt="Hunterfall"></div>
+            <div class="reveal"><img class="contact-porton" src="porton.jpg" alt="Hunterfall" width="600" height="600"></div>
             <div class="social-grid reveal">
                 <a href="https://www.instagram.com/hunterfall_mx" class="social-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>Instagram</a>
                 <a href="https://www.tiktok.com/@hunterfall_mx" class="social-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.86a8.28 8.28 0 004.86 1.56V6.99a4.84 4.84 0 01-1.1-.3z"/></svg>TikTok</a>
