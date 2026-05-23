@@ -112,6 +112,21 @@
         }
         .band-members strong { color: var(--white); }
 
+        /* ========== SECTION 3.5: VIDEO ========== */
+        .video-section {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            background: var(--black);
+            display: flex; justify-content: center; align-items: center;
+            padding: 0;
+        }
+        .promo-video {
+            display: block; width: auto; max-width: 100%;
+            height: auto; max-height: 60vh; margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .promo-video { width: 100%; max-height: none; }
+        }
+
         /* ========== SECTION 4: CONTACTO / LINKS ========== */
         .contact-section { padding: 5rem 2rem; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; }
         .contact-inner { max-width: 700px; margin: 0 auto; }
@@ -253,6 +268,11 @@
         </div>
     </section>
 
+    <!-- ===== SECTION 3.5: VIDEO ===== -->
+    <section class="video-section">
+        <video class="promo-video" src="HunterFall.mp4" muted loop playsinline preload="metadata" width="540" height="960" aria-label="Hunterfall — video promocional"></video>
+    </section>
+
     <!-- ===== SECTION 4: CONTACTO / LINKS ===== -->
     <section class="contact-section" id="links">
         <div class="contact-inner">
@@ -281,6 +301,11 @@
         function closeMenu(){document.querySelector('.hamburger').classList.remove('active');document.querySelector('.nav-links').classList.remove('open');}
         const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target);}});},{threshold:0.12});
         document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+        const promo=document.querySelector('.promo-video');
+        if(promo){
+            const vObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){promo.play().catch(()=>{});}else{promo.pause();}});},{threshold:0.5});
+            vObs.observe(promo);
+        }
     </script>
 
     <!-- Cloudflare Web Analytics -->
