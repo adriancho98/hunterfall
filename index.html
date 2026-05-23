@@ -116,14 +116,22 @@
         .video-section {
             border-top: 1px solid rgba(255,255,255,0.06);
             background: var(--black);
-            display: flex; justify-content: center; align-items: center;
-            padding: 0;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            padding: 0 0 1.5rem;
         }
         .promo-video {
             display: block; width: auto; max-width: 100%;
             height: auto; max-height: 60vh; margin: 0 auto;
             filter: grayscale(1) contrast(1.1);
         }
+        .video-credit {
+            font-family: 'Special Elite', monospace;
+            font-size: 0.65rem; letter-spacing: 0.2em;
+            color: var(--gray); text-transform: uppercase;
+            margin-top: 1rem;
+        }
+        .video-credit a { color: inherit; }
+        .video-credit a:hover { color: var(--white); opacity: 1; }
         @media (max-width: 768px) {
             .promo-video { width: 100%; max-height: none; }
         }
@@ -272,6 +280,7 @@
     <!-- ===== SECTION 3.5: VIDEO ===== -->
     <section class="video-section">
         <video class="promo-video" src="HunterFall.mp4" muted loop playsinline preload="metadata" width="540" height="960" aria-label="Hunterfall — video promocional"></video>
+        <p class="video-credit"><a href="https://www.instagram.com/aclockworkarmenta" target="_blank" rel="noopener">@aclockworkarmenta</a></p>
     </section>
 
     <!-- ===== SECTION 4: CONTACTO / LINKS ===== -->
