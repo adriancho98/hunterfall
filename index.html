@@ -125,6 +125,7 @@
             filter: grayscale(1) contrast(1.1);
             will-change: transform;
             transform: translateZ(0);
+            cursor: pointer;
         }
         .video-credit {
             font-family: 'Special Elite', monospace;
@@ -281,7 +282,7 @@
 
     <!-- ===== SECTION 3.5: VIDEO ===== -->
     <section class="video-section">
-        <video class="promo-video" src="HunterFall.mp4" muted loop playsinline preload="metadata" width="540" height="960" aria-label="Hunterfall — video promocional"></video>
+        <video class="promo-video" src="HunterFall.mp4" poster="poster.jpg" muted loop playsinline preload="metadata" width="540" height="960" aria-label="Hunterfall — video promocional"></video>
         <p class="video-credit"><a href="https://www.instagram.com/aclockworkarmenta" target="_blank" rel="noopener">@aclockworkarmenta</a></p>
     </section>
 
@@ -317,6 +318,7 @@
         if(promo){
             const vObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){promo.play().catch(()=>{});}else{promo.pause();}});},{threshold:0.5});
             vObs.observe(promo);
+            promo.addEventListener('click',()=>{if(promo.paused){promo.play().catch(()=>{});}else{promo.pause();}});
         }
     </script>
 
